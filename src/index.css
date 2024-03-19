@@ -1,0 +1,85 @@
+
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn.pixabay.com/photo/2014/08/11/21/39/wall-416060_640.jpg');
+
+            background-repeat: no-repeat;
+            margin:0px;
+            background-attachment: fixed;  
+            background-size:cover;
+            background-position: right bottom, left top;
+            background-size: 100% 100%;
+            margin-bottom:100px;
+            min-height: 100vh;
+            
+
+        }
+        h1{
+          background-color: #434242;
+          border-radius: 50px;
+          text-align: center;
+          background-size: 100px;
+          color: rgb(12, 8, 8);
+          
+        }
+
+        h1:hover{
+          background-color: rgb(108, 108, 108);
+        }
+        h2{
+          border-radius: 50px;
+          text-align: center;
+
+          background-size: 100px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+             bottom: 0;
+             width: 100%;
+        }
+
+         footer a {
+            color: #fff;
+            text-decoration: none;
+        } 
+        
+
+       ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+        border-right:1px solid #bbb;
+      }
+      
+      li:last-child {
+        border-right: none;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+      }
+      .log {
+        background-color: #0056b3;
+    }

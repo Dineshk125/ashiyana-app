@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            background-color: #2190cc;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            margin-top: 100px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.log {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="help&support.html">Help & Suppurt</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#contact">Menu</a></li>
+        <li><a href="lang.html">Language</a></li>
+
+        <li class="log" style="float:right"><a href="regi.html">Sign-up & sign-in</a></li>
+      </ul>
+
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="registration_process.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="state" placeholder="State" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="city" placeholder="City" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="time" placeholder="DOB - DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </form>
+        <div class="login-link">
+            <a href="rg.html">Already have an account? Login</a>
+        </div>
+    </div>
+</body>
+</html>
