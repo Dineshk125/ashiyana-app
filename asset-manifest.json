@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ashiyana-app/static/css/main.2a752b4b.css",
+    "main.js": "/ashiyana-app/static/js/main.3e7e87ad.js",
+    "static/js/787.e7202026.chunk.js": "/ashiyana-app/static/js/787.e7202026.chunk.js",
+    "index.html": "/ashiyana-app/index.html",
+    "main.2a752b4b.css.map": "/ashiyana-app/static/css/main.2a752b4b.css.map",
+    "main.3e7e87ad.js.map": "/ashiyana-app/static/js/main.3e7e87ad.js.map",
+    "787.e7202026.chunk.js.map": "/ashiyana-app/static/js/787.e7202026.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a752b4b.css",
+    "static/js/main.3e7e87ad.js"
+  ]
+}

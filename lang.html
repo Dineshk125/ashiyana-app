@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Language Webpage</title>
+</head>
+<style>
+    body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OnIidPrLelR1qWEFWsvxjjyiplj4jeQYKw&usqp=CAU);
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  .log {
+    background-color: #0056b3;
+}
+</style>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="help&support.html">Help & Suppurt</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#contact">Menu</a></li>
+        <li class="log" style="float:right"><a href="regi.html">Sign-up & sign-in</a></li>
+      </ul>
+
+    <h1 id="content">Welcome to our website</h1>
+    <button style="background-color: darkslategray; color: white;"  onclick="changeLanguage('en')">English</button>
+    <button style="background-color: darkslategray; color: white;" onclick="changeLanguage('es')">Hindi</button>
+
+    <script>
+        // Language content
+        const languageData = {
+            'en': 'Welcome to our website',
+            'es': 'Bienvenidos a nuestro sitio web',
+            'fr': 'Bienvenue sur notre site web'
+        };
+
+        // Function to change language
+        function changeLanguage(lang) {
+            const contentElement = document.getElementById('content');
+            if (languageData.hasOwnProperty(lang)) {
+                contentElement.textContent = languageData[lang];
+            }
+        }
+    </script>
+</body>
+</html>
